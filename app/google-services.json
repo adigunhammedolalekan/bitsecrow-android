@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "617428784248",
+    "firebase_url": "https://bitsescrow-ec5f1.firebaseio.com",
+    "project_id": "bitsescrow-ec5f1",
+    "storage_bucket": "bitsescrow-ec5f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617428784248:android:bfa774bf240ee61d",
+        "android_client_info": {
+          "package_name": "com.bitsescrow.app.bitsescrow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617428784248-40mea88ovr414qgv0g2531tlmr9jp49h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk5vv2JMiSaYjBpvmrxDnZPfDg4B6HhMk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

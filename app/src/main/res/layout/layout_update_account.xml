@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Update Account"
+            android:textAppearance="@style/BoldText"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update your account details"
+            android:layout_marginBottom="16dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="16dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@color/divider"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:id="@+id/iv_photo_update_account"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_underlineColor="@color/dark"
+            android:hint="Name"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal"
+            app:met_helperText="Your name in full"
+            android:id="@+id/edt_name_sign_up"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_underlineColor="@color/dark"
+            android:hint="Phone number"
+            app:met_helperText="Important"
+            android:inputType="phone|number"
+            android:textSize="16sp"
+            app:met_floatingLabel="normal"
+            android:id="@+id/edt_phone_update_account"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:layout_gravity="right|end"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_action_go"/>
+    </LinearLayout>
+</ScrollView>

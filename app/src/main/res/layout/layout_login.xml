@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Sign In"
+                android:textAppearance="@style/BoldText"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back. Sign in with your email and password"
+                android:layout_marginBottom="16dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="@color/divider"
+                android:layout_marginBottom="16dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_underlineColor="@color/dark"
+                android:hint="Email"
+                app:met_floatingLabel="normal"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                android:id="@+id/edt_email_login"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_underlineColor="@color/dark"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:met_floatingLabel="normal"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:id="@+id/edt_password_login"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ButtonStyle.BorderLess"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_gravity="right|end|center_vertical"
+                    android:textAppearance="@style/BoldText"/>
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabSize="normal"
+                    android:id="@+id/fab_sign_in_"
+                    android:src="@drawable/ic_action_go"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/divider"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I dont have an account?"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle.BorderLess"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:id="@+id/btn_create_account"
+                android:textAppearance="@style/BoldText"
+                android:text="CREATE AN ACCOUNT"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/loading_layout"
+        android:id="@+id/loading_layout_sign_in"
+        android:visibility="gone"/>
+</FrameLayout>

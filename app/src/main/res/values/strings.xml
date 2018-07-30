@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BitsEscrow</string>
+    <string name="cloudinary_uri">cloudinary://824561353519438:wWzk6LM3z7_nWyw0JFqWhwriZFQ@coinlony-dev</string>
+    <string name="lorem">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </string>
+    <string name="about">BitsEscrow is a Bitcoin escrow system. Our aim is to be the world biggest Bitcoin escrow system by gaining peoples trust nd serving them with optimum efficiency</string>
+</resources>

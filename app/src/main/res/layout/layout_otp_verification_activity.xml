@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Verification Code"
+            android:textSize="20sp"
+            android:textAppearance="@style/BoldText"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have sent a verification code to your email and phone number"
+            android:gravity="center" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/divider"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="10"
+            android:inputType="number"
+            android:hint="Code"
+            android:gravity="center"
+            android:id="@+id/edt_code_verification_activity"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="8"
+            style="@style/ButtonStyle"
+            android:text="VERIFY"
+            android:id="@+id/btn_verify_code_"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minEms="10"
+            style="@style/ButtonStyle"
+            android:text="RELEASE COIN"
+            android:visibility="gone"
+            android:id="@+id/btn_release__coin"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_count_down_timer"
+            android:text="Your code expires in 1:90"
+            android:layout_marginBottom="10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/divider"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I did not receive any code?"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle.BorderLess"
+            android:id="@+id/btn_resend_code"
+            android:text="RESEND CODE"/>
+    </LinearLayout>
+</ScrollView>

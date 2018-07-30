@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fund New Escrow"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAppearance="@style/BoldText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Its just a click of a button"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/divider"
+            android:layout_marginBottom="16dp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_underlineColor="@color/dark"
+            android:hint="Beneficiary Email"
+            android:id="@+id/edt_beneficiary_email_fund_escrow"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            app:met_floatingLabel="normal"
+            app:met_helperText="BitsEscrow email address of the beneficiary."/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_underlineColor="@color/dark"
+            android:hint="Amount"
+            app:met_floatingLabel="normal"
+            android:id="@+id/edt_amount_fund_escrow"
+            android:inputType="number|numberDecimal"
+            android:textSize="16sp"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="normal"
+            android:textSize="16sp"
+            android:id="@+id/edt_narration_fund_escrow"
+            android:hint="Narration"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layout_amount"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="0.11BTC"
+                android:textSize="20sp"
+                android:id="@+id/tv_btc_fund_escrow"
+                android:textAppearance="@style/BoldText"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_usd_fund_escrow"
+                android:text="$746"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonStyle"
+            android:id="@+id/btn_fund_escrow"
+            android:text="Fund Escrow"/>
+    </LinearLayout>
+</LinearLayout>

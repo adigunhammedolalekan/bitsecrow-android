@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/iv_slide"
+            android:layout_gravity="center_horizontal|center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginTop="10dp"
+            android:text="Secure"
+            android:textSize="18sp"
+            android:id="@+id/tv_title_slide"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAppearance="@style/BoldText"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:text="Secure with escrow"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:id="@+id/tv_subtitle_entry_activity"/>
+    </LinearLayout>
+</RelativeLayout>
