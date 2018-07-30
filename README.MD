@@ -17,4 +17,4 @@ BitsEscrow is a simple Bitcoin escrow system. We always need to do business with
 * Real-time communication using Websocket
 
 ##ScreenShots
-
+![Intro](https://github.com/adigunhammedolalekan/bitsecrow-android/shots/a.png)
