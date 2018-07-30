@@ -1,7 +1,7 @@
 # BitsEscrow Mobile App
 
 ### About
-BitsEscrow is a simple Bitcoin escrow system. We always need to do business with people we dont trust on the internet all over the world. BitsEscrow stands as a third party fulfils the initial stated escrow policy.
+BitsEscrow is a simple Bitcoin escrow system. We always need to do business with people we dont trust on the internet all over the world. BitsEscrow stands as a third party that fulfils the initial stated escrow policy.
 
 #### How it works
 * Create an account with your email
@@ -15,3 +15,6 @@ BitsEscrow is a simple Bitcoin escrow system. We always need to do business with
 * Built on-top Blockcypher API (api.blockcypher.com)
 * Backend completely written in Golang
 * Real-time communication using Websocket
+
+##ScreenShots
+
